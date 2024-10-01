@@ -1,0 +1,11 @@
+.toggleTheme {
+  width: fit-content;
+  color: var(--color);
+  transition: all 1s ease-in-out;
+  filter: blur(1px);
+}
+
+.toggleTheme:hover {
+  cursor: pointer;
+  filter: blur(0px);
+}
