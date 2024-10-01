@@ -9,8 +9,8 @@
   font-family: disclaimer, Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
   color-scheme: light dark;
-  --background-image: url("assets/background_light.jpg");
-  --color: black;
+  --background-image: url("assets/background_dark.jpg");
+  --color: white;
 }
 
 body {
@@ -75,9 +75,9 @@ nav {
   flex-wrap: wrap;
 }
 
-[theme="dark"] {
-  --color: white;
-  --background-image: url("assets/background_dark.jpg");
+[theme="light"] {
+  --color: black;
+  --background-image: url("assets/background_light.jpg");
 }
 
 @media (prefers-color-scheme: light) {
