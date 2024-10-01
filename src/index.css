@@ -23,7 +23,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100dvh;
   transition: background-image 1s ease-in-out;
 }
 
@@ -71,7 +71,6 @@ nav {
 .links {
   display: flex;
   gap: 2em;
-  justify-content: center;
   flex-wrap: wrap;
 }
 

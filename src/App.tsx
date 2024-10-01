@@ -22,7 +22,6 @@ function App() {
           >
             <IconBrandSpotify size="48px" />
           </a>
-
           <a
             href="https://on.soundcloud.com/FA1sGCWxi84Ra5Uh9"
             target="_blank"
