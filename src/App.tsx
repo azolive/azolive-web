@@ -22,13 +22,7 @@ function App() {
           >
             <IconBrandSpotify size="48px" />
           </a>
-          <a
-            href="https://on.soundcloud.com/FA1sGCWxi84Ra5Uh9"
-            target="_blank"
-            rel="noreferrer"
-            title="Soundcloud"
-            className="link"
-          >
+          <a href="https://soundcloud.com/azolive" target="_blank" rel="noreferrer" title="Soundcloud" className="link">
             <IconBrandSoundcloud size="48px" />
           </a>
           <a
