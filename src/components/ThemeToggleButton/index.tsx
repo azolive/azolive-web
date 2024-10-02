@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./style.css";
 import { IconMoonFilled, IconSun } from "@tabler/icons-react";
 
 export function ThemeToggleButton() {
@@ -21,7 +20,7 @@ export function ThemeToggleButton() {
   }, [dark]);
 
   return (
-    <div className="toggleTheme" onClick={() => setDark(!dark)} onKeyUp={() => {}}>
+    <div className="iconButton" onClick={() => setDark(!dark)} onKeyUp={() => {}}>
       {dark ? <IconMoonFilled size={36} /> : <IconSun size={36} />}
     </div>
   );

@@ -11,6 +11,11 @@
   color-scheme: light dark;
   --background-image: url("assets/background_dark.jpg");
   --color: white;
+  --color-glow: gray;
+  --color-spotify: #1db954;
+  --color-soundcloud: #f37422;
+  --color-instagram: #e4405f;
+  --blend-mode: none;
 }
 
 body {
@@ -18,7 +23,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: var(--color);
   margin: 0;
   display: flex;
   place-items: center;
@@ -45,27 +49,44 @@ nav {
 
 .title {
   margin: 0;
+  color: var(--color);
   font-size: 10em;
   width: fit-content;
   font-weight: 400;
-  filter: blur(1px);
   user-select: none;
-  transition: all 1s ease-in-out;
+  filter: drop-shadow(0 0 15px var(--color-glow));
+  transition: color 1s ease-in-out;
+  mix-blend-mode: var(--blend-mode);
 }
 
-.title:hover {
-  filter: blur(0px);
-}
-
-.link {
+.iconButton {
   color: var(--color);
-  transition: all 1s ease-in-out;
-  filter: blur(1px);
+  cursor: pointer;
+  opacity: 0.6;
+  filter: drop-shadow(0 0 5px var(--color-glow));
+  transition: color 1s ease-in-out, opacity 0.2s ease-in-out, filter 0.5s
+    ease-in-out;
+  mix-blend-mode: var(--blend-mode);
 }
 
-.link:hover {
-  filter: blur(0px);
-  text-shadow: none;
+.iconButton:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.iconButton.spotify:hover {
+  color: var(--color-spotify);
+  filter: none;
+}
+
+.iconButton.soundcloud:hover {
+  color: var(--color-soundcloud);
+  filter: none;
+}
+
+.iconButton.instagram:hover {
+  color: var(--color-instagram);
+  filter: none;
 }
 
 .links {
@@ -75,9 +96,14 @@ nav {
 }
 
 [theme="light"] {
-  --color: black;
+  --color: rgb(53, 53, 53);
+  --color-glow: none;
+  --blend-mode: color-burn;
   --background-image: url("assets/background_light.jpg");
 }
 
 @media (prefers-color-scheme: light) {
+  .iconButton {
+    filter: none;
+  }
 }
