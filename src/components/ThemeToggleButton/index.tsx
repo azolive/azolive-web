@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { IconMoonFilled, IconSun } from "@tabler/icons-react";
+import { useEffect, useState } from "react";
 
 export function ThemeToggleButton() {
   const [dark, setDark] = useState(false);

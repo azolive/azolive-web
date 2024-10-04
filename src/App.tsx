@@ -1,6 +1,6 @@
 import "./App.css";
 import { IconBrandInstagram, IconBrandSoundcloud, IconBrandSpotify, IconBrandVsco } from "@tabler/icons-react";
-import { ThemeToggleButton } from "./components/ThemeToggleButton";
+// import { ThemeToggleButton } from "./components/ThemeToggleButton";
 
 function App() {
   return (
