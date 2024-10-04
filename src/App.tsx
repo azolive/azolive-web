@@ -14,7 +14,7 @@ function App() {
       <footer>
         <div className="links">
           <a
-            href="https://open.spotify.com/artist/67ITj9a4jErZJow5mLNl3a?si=xVTfix32Rru9CqT_KqgsRg"
+            href="https://open.spotify.com/artist/67ITj9a4jErZJow5mLNl3a"
             target="_blank"
             rel="noreferrer"
             title="Spotify"
