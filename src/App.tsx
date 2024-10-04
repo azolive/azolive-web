@@ -5,9 +5,9 @@ import { ThemeToggleButton } from "./components/ThemeToggleButton";
 function App() {
   return (
     <div className="content">
-      <nav>
+      {/* <nav>
         <ThemeToggleButton />
-      </nav>
+      </nav> */}
       <main>
         <h1 className="title">AN</h1>
       </main>
