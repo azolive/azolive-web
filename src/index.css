@@ -11,7 +11,7 @@
   color-scheme: light dark;
   --background-image: url("assets/background_dark.jpg");
   --color: white;
-  --color-glow: gray;
+  --color-glow: rgb(170, 170, 170);
   --color-spotify: #1db954;
   --color-soundcloud: #f37422;
   --color-instagram: #e4405f;
@@ -34,7 +34,7 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 10em;
 }
 
 main {
@@ -64,7 +64,7 @@ nav {
   cursor: pointer;
   opacity: 0.6;
   filter: drop-shadow(0 0 5px var(--color-glow));
-  transition: color 1s ease-in-out, opacity 0.2s ease-in-out, filter 0.5s
+  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out, filter 0.5s
     ease-in-out;
   mix-blend-mode: var(--blend-mode);
 }
@@ -105,5 +105,11 @@ nav {
 @media (prefers-color-scheme: light) {
   .iconButton {
     filter: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    background-image: url("assets/background_dark2.jpg");
   }
 }
