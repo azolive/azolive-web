@@ -8,7 +8,6 @@
 :root {
   font-family: disclaimer, Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
-  color-scheme: light dark;
   --background-image: url("assets/background_dark.jpg");
   --color: white;
   --color-glow: rgb(170, 170, 170);
@@ -16,6 +15,13 @@
   --color-soundcloud: #f37422;
   --color-instagram: #e4405f;
   --blend-mode: none;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 body {
@@ -59,53 +65,10 @@ nav {
   mix-blend-mode: var(--blend-mode);
 }
 
-.iconButton {
-  color: var(--color);
-  cursor: pointer;
-  opacity: 0.6;
-  filter: drop-shadow(0 0 5px var(--color-glow));
-  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out, filter 0.5s
-    ease-in-out;
-  mix-blend-mode: var(--blend-mode);
-}
-
-.iconButton:hover {
-  filter: none;
-  opacity: 1;
-}
-
-.iconButton.spotify:hover {
-  color: var(--color-spotify);
-  filter: none;
-}
-
-.iconButton.soundcloud:hover {
-  color: var(--color-soundcloud);
-  filter: none;
-}
-
-.iconButton.instagram:hover {
-  color: var(--color-instagram);
-  filter: none;
-}
-
 .links {
   display: flex;
   gap: 2em;
   flex-wrap: wrap;
-}
-
-[theme="light"] {
-  --color: rgb(53, 53, 53);
-  --color-glow: none;
-  --blend-mode: color-burn;
-  --background-image: url("assets/background_light.jpg");
-}
-
-@media (prefers-color-scheme: light) {
-  .iconButton {
-    filter: none;
-  }
 }
 
 @media only screen and (max-width: 600px) {
