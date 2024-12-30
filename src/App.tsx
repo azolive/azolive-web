@@ -7,7 +7,7 @@ import {
 } from "@tabler/icons-react";
 import { IconButton } from "./components/IconButton/IconButton";
 
-function App() {
+export function App() {
   return (
     <div className="content">
       <main>
@@ -45,5 +45,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
