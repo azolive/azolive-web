@@ -24,10 +24,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
 }
 
 body {
+  background-color: black;
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-position: center;
