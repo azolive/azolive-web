@@ -27,3 +27,8 @@
   color: var(--color-instagram);
   filter: none;
 }
+
+.iconButton.tiktok:hover {
+  color: white;
+  filter: none;
+}
