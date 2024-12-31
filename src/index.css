@@ -27,7 +27,6 @@ body {
 }
 
 body {
-  background-color: black;
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-position: center;
