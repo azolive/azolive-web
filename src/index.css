@@ -8,7 +8,7 @@
 :root {
   font-family: disclaimer, Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif;
-  --background-image: url("assets/background_dark.jpg");
+  color-scheme: dark;
   --color: white;
   --color-glow: rgb(170, 170, 170);
   --color-spotify: #1db954;
@@ -21,33 +21,21 @@ html,
 body {
   height: 100%;
   margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents scrollbars */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-body {
-  background-image: var(--background-image);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition: background-image 1s ease-in-out;
-}
-
 .content {
   display: flex;
+  position: relative;
+  padding: 2em;
+  z-index: 1;
   flex-direction: column;
-  gap: 10em;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
+  align-items: flex-start;
+  gap: 3em;
 }
 
 .title {
@@ -67,10 +55,4 @@ nav {
   justify-content: space-evenly;
   gap: 1em;
   flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-image: url("assets/background_dark2.jpg");
-  }
 }
