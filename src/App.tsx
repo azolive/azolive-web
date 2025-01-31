@@ -2,6 +2,7 @@ import {
   IconBrandInstagram,
   IconBrandSoundcloud,
   IconBrandSpotify,
+  IconBrandYoutube,
   IconBrandTiktok,
   IconBrandVsco,
 } from "@tabler/icons-react";
@@ -21,7 +22,12 @@ export function App() {
             icon={IconBrandInstagram}
             title="Instagram"
           />
-          <IconButton href="https://vsco.co/anvthan/" className="vsco" icon={IconBrandVsco} title="VSCO" />
+          <IconButton
+            href="https://vsco.co/anvthan/"
+            className="vsco"
+            icon={IconBrandVsco}
+            title="VSCO"
+          />
           <IconButton
             href="https://tiktok.com/@highlowmixup/"
             className="tiktok"
@@ -33,6 +39,12 @@ export function App() {
             className="soundcloud"
             icon={IconBrandSoundcloud}
             title="Soundcloud"
+          />
+          <IconButton
+            href="https://www.youtube.com/@azo_live"
+            className="youtube"
+            icon={IconBrandYoutube}
+            title="YouTube"
           />
           <IconButton
             href="https://open.spotify.com/artist/67ITj9a4jErZJow5mLNl3a"

@@ -28,6 +28,11 @@
   filter: none;
 }
 
+.iconButton.youtube:hover {
+  color: var(--color-youtube);
+  filter: none;
+}
+
 .iconButton.tiktok:hover {
   color: white;
   filter: none;
