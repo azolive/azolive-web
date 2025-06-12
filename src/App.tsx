@@ -4,15 +4,15 @@ import {
   IconBrandSpotify,
   IconBrandYoutube,
   IconBrandTiktok,
-  IconBrandVsco,
 } from "@tabler/icons-react";
 import { IconButton } from "./components/IconButton/IconButton";
-import { VideoBackground } from "./components/VideoBackground/VideoBackground";
+import bg from "./assets/omt-bg.webp";
+import "./css/Background.css";
 
 export function App() {
   return (
     <>
-      <VideoBackground />
+      <img src={bg} className="background-container" />
       <div className="content">
         <h1 className="title">AN</h1>
         <div className="links">
@@ -21,12 +21,6 @@ export function App() {
             className="instagram"
             icon={IconBrandInstagram}
             title="Instagram"
-          />
-          <IconButton
-            href="https://vsco.co/anvthan/"
-            className="vsco"
-            icon={IconBrandVsco}
-            title="VSCO"
           />
           <IconButton
             href="https://tiktok.com/@highlowmixup/"

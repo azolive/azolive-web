@@ -1,5 +1,5 @@
 import type { Icon, IconProps } from "@tabler/icons-react";
-import "./IconButton.css";
+import "../../css/IconButton.css";
 
 interface IconButtonProps {
   icon: React.ForwardRefExoticComponent<IconProps & React.RefAttributes<Icon>>;
